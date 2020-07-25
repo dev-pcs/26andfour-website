@@ -141,5 +141,45 @@ h2 {
     text-decoration: none;
     font-size: 1.5em;
     margin: 3% auto 7%;
+    position: relative;
     z-index: 4;
+}
+
+.footer-container {
+    width: 100%;
+    background: #3d444a;
+    color: white;
+    border-top-right-radius: 40px;
+    transform: skewy(2deg);
+}
+
+.footer-container .container {
+    transform: skewy(-2deg);
+}
+
+.footer-container:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #3d444a;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    z-index: -2;
+}
+
+.footer-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    left: 0;
+    border-radius: 50%;
+}
+
+ul.footer-links {
+    margin: 0 auto;
 }
