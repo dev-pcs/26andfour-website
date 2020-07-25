@@ -19,6 +19,7 @@ ul {
 .container {
     text-align: center;
     padding: .8em 1.2em;
+    /* border-bottom-right-radius: 40px; */
 }
 
 .logo {
@@ -57,4 +58,35 @@ h1, .subhead {
     width: 100%;
     background: #00c2ff;
     color: white;
+    margin-top: 15%;
+    padding: 4em 0 2em;
+    border-top-left-radius:  40px;
+    transform: skewY(-2deg);
+}
+
+.blue-container:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: #00c2ff;
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+
+.blue-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    top: -80px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.blue-container ul {
+    transform: skewY(2deg);
 }
